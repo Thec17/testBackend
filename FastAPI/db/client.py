@@ -9,12 +9,12 @@ from pymongo import MongoClient
 # Descomentar el db_client local o remoto correspondiente
 
 # Base de datos local MongoDB
-db_client = MongoClient().local
+# db_client = MongoClient().local
 
 # Clase en vídeo: https://youtu.be/_y9qQZXE24A?t=25470
 
 # Base de datos remota MongoDB Atlas (https://mongodb.com)
-# db_client = MongoClient("mongodb+srv://testusername:testpassword@cluster0.fxqpy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").test
+db_client = MongoClient("mongodb+srv://testusername:testpassword@cluster0.fxqpy.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").test
 
 # Despliegue API en la nube:
 # Deta - https://www.deta.sh/
