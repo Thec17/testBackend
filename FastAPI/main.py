@@ -1,6 +1,9 @@
 from fastapi import FastAPI
 from routers import products, users, basic_auth_users, jwt_auth_users, users_db
 from fastapi.staticfiles import StaticFiles
+import sys
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 app = FastAPI() # URL: http://127.0.0.1:8000
 # Para montar el servidor local hay que ir a la ruta del main (o el archivo a montar) -> cd .\curso_backend_mouredev\FastAPI
